@@ -1,8 +1,13 @@
 import 'package:demo/data.dart';
+import 'package:demo/models/room.dart';
 import 'package:demo/widgets/city.dart';
+import 'package:demo/widgets/room_item.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
+  late List<Room> hotelRooms = DUMMY_ROOMS.where((element) {
+    return element.hotelId == "h2";
+  }).toList();
 
   @override
   Widget build(BuildContext context) {
@@ -41,11 +46,9 @@ class Home extends StatelessWidget {
             ],
           ),
         ),
-
         Divider(
           height: 10,
         ),
-
         Container(
           padding: const EdgeInsets.fromLTRB(5, 5, 5, 2),
           child: const Text(
@@ -58,12 +61,29 @@ class Home extends StatelessWidget {
             ),
           ),
         ),
-
+        Container(
+          height: 100,
+          width: double.infinity,
+          padding: const EdgeInsets.fromLTRB(5, 5, 5, 2),
+          child: const Center(
+            child: Text(
+              'Section Coming Soon',
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                fontFamily: 'RobotoCondensed',
+                fontSize: 18,
+                color: Colors.grey,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ),
         Divider(
           height: 20,
         ),
-
         Container(
+          height: 100,
+          width: double.infinity,
           padding: const EdgeInsets.fromLTRB(5, 5, 5, 2),
           child: const Text(
             'Our Collection',
@@ -75,7 +95,21 @@ class Home extends StatelessWidget {
             ),
           ),
         ),
-
+        Container(
+          padding: const EdgeInsets.fromLTRB(5, 5, 5, 2),
+          child: const Center(
+            child: Text(
+              'Section Coming Soon',
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                fontFamily: 'RobotoCondensed',
+                fontSize: 18,
+                color: Colors.grey,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }

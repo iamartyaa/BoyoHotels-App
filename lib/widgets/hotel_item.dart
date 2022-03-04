@@ -18,6 +18,7 @@ class HotelItem extends StatelessWidget {
   });
 
   void selectHotel(BuildContext context) {
+    print(hId);
     Navigator.of(context).pushNamed(
       HotelDetail.routeName,
       arguments: hId,

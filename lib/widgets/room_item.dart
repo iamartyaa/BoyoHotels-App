@@ -1,5 +1,6 @@
 import 'package:demo/data.dart';
 import 'package:demo/models/room.dart';
+import 'package:demo/screens/hotel_detail.dart';
 import 'package:demo/widgets/booking.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,8 @@ class RoomItem extends StatefulWidget {
   final String cityName;
   final String hotelName;
   final Function addNewBooking;
-  RoomItem({ required this.id,required this.cityName,required this.hotelName, required this.addNewBooking});
+  final String hotelId;
+  RoomItem({ required this.id,required this.cityName,required this.hotelName, required this.addNewBooking,required this.hotelId});
 
   @override
   State<RoomItem> createState() => _RoomItemState();
@@ -16,7 +18,7 @@ class RoomItem extends StatefulWidget {
 
 class _RoomItemState extends State<RoomItem> {
   late Room room = DUMMY_ROOMS.firstWhere((element) {
-    return element.id == widget.id;
+    return element.id == widget.id && element.hotelId==widget.hotelId;
   });
 
   void bookHotel(BuildContext ctx,String id) {

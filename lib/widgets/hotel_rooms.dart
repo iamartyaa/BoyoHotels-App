@@ -31,6 +31,7 @@ class _HotelRoomsState extends State<HotelRooms> {
             cityName: widget.cityName,
             hotelName: widget.hotelName,
             addNewBooking: widget.addNewBooking,
+            hotelId: widget.hotelId,
           );
         }).toList(),
       ],

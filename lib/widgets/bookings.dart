@@ -44,7 +44,7 @@ class Bookings extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'Raleway',
                 fontWeight: FontWeight.bold,
-                fontSize: 20,
+                fontSize: 18,
               ),
               ),
             ),

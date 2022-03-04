@@ -22,16 +22,20 @@ class Home extends StatelessWidget {
           ),
         ),
         Container(
-          height: 140,
+          height: 100,
           child: ListView(
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.all(2),
             children: [
               ...DUMMY_CITIES.map((catData) {
-                return City(
-                  id: catData.id,
-                  title: catData.title,
-                  imageUrl: catData.imageUrl,
+                return Container(
+                  height: 100,
+                  width: 100,
+                  child: City(
+                    id: catData.id,
+                    title: catData.title,
+                    imageUrl: catData.imageUrl,
+                  ),
                 );
               }).toList(),
             ],

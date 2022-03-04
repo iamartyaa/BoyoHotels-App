@@ -33,7 +33,7 @@ class City extends StatelessWidget {
                   ),
                   child: Image.asset(
                     imageUrl,
-                    // height: 100,
+                    height: 60,
                     // width: 100,
                     fit: BoxFit.cover,
                   ),

@@ -1,3 +1,4 @@
+import 'package:demo/models/category.dart';
 import 'package:demo/models/hotels.dart';
 import 'package:demo/models/room.dart';
 import 'package:flutter/material.dart';
@@ -128,4 +129,27 @@ List<Room> DUMMY_ROOMS = const [
 
   Room(hotelId: 'h7',id: 'r1', title: 'CLASSIC (2X)', area: 130, price: 1231, img: "https://images.oyoroomscdn.com/uploads/hotel_image/115463/medium/9ac4d266c3e37117.jpg",),
   
+];
+
+List<Category> DUMMY_CATEGORIES = [
+  const Category(
+    id: 'c1',
+    title: 'Reach for the Stars',
+    img: "assets/images/rad-pozniakov-134-72ac7W4-unsplash.jpg",
+  ),
+  const Category(
+    id: 'c2',
+    title: 'Seas the day',
+    img: "assets/images/lance-asper-mNDVSSmMt0Y-unsplash.jpg",
+  ),
+  const Category(
+    id: 'c3',
+    title: 'Wander amid wonders',
+    img: "assets/images/gaurav-sharma-lj3r0SZK7rQ-unsplash.jpg",
+  ),
+  const Category(
+    id: 'c4',
+    title: 'Hop around town',
+    img: "assets/images/pedro-lastra-5g8dJvtYRYA-unsplash.jpg",
+  ),
 ];

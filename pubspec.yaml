@@ -69,7 +69,11 @@ flutter:
     - assets/images/bangalore.jpg
     - assets/images/agra.jpg
     - assets/images/jaipur.jpg
+    - assets/images/pedro-lastra-5g8dJvtYRYA-unsplash.jpg
+    - assets/images/gaurav-sharma-lj3r0SZK7rQ-unsplash.jpg
     - assets/images/chennai.jpeg
+    - assets/images/lance-asper-mNDVSSmMt0Y-unsplash.jpg
+    - assets/images/rad-pozniakov-134-72ac7W4-unsplash.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

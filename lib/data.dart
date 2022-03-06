@@ -51,8 +51,8 @@ List<Hotel> DUMMY_HOTEL = const [
   Hotel(
       id: 'h2',
       cityId: 'c6',
-      name: 'METROPOLITAN',
-      address: '22 Godam Cir, Durgadas Colony, C Scheme, Ashok Nagar, Jaipur',
+      name: 'Metropolitan',
+      address: '22 Godam Cir, Durgadas Colony, Ashok Nagar, Jaipur',
       rating: 5.0,
       amenities: ['AC', 'Free Wifi','Swimming Pool','Parking','Restaurant'],
       rooms: 4,
@@ -81,7 +81,7 @@ List<Hotel> DUMMY_HOTEL = const [
     Hotel(
       id: 'h5',
       cityId: 'c2',
-      name: 'Daryavardi Beach Resort',
+      name: 'Daryavardi Resort',
       address: 'Near Rajodi Beach , Rajodi, Mumbai',
       rating: 3.5,
       amenities: ['AC', 'Free Wifi','TV','Seating Area','Restaurant','Parking'],

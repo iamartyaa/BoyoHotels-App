@@ -1,4 +1,5 @@
 import 'package:demo/data.dart';
+import 'package:demo/models/hotels.dart';
 import 'package:demo/models/room.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rounded_date_picker/flutter_rounded_date_picker.dart';
@@ -11,8 +12,12 @@ class NewBooking extends StatefulWidget {
   late int roomPrice = room.price;
   final String hotelName;
   final String cityName;
+  late Hotel h = DUMMY_HOTEL.firstWhere((element) {
+    return element.name==hotelName;
+  }) ;
+
   late Room room = DUMMY_ROOMS.firstWhere((element) {
-    return element.id == roomId;
+    return element.id == roomId && element.hotelId==h.id;
   });
   NewBooking(this.roomId, this.cityName, this.hotelName, this.addNewBooking);
 
@@ -141,7 +146,7 @@ class _NewBookingState extends State<NewBooking> {
                         '${widget.hotelName}',
                         style: const TextStyle(
                           fontFamily: 'Raleway',
-                          fontSize: 32,
+                          fontSize: 24,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -173,7 +178,7 @@ class _NewBookingState extends State<NewBooking> {
                       height: 100,
                       width: 100,
                       child: Image.network(
-                        "https://images.oyoroomscdn.com/uploads/hotel_image/16399/large/0e327869e1ba8d94.jpg",
+                        widget.h.img,
                         fit: BoxFit.cover,
                       ),
                     ),

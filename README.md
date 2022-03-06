@@ -1,16 +1,22 @@
-# demo
+# Boyo Hotels
 
-A new Flutter project.
+A simple Hotel booking app built in similarity with Oyo app (as the name itself gives a hint) with a cleaner UI.
 
-## Getting Started
+## Key Points
 
-This project is a starting point for a Flutter application.
+- Built with **Flutter & Dart** on the frontend using **Material UI**
+- Similar screen layout as that of Oyo app with features like Booking Hotel, displaying User Bookings, marking Hotels as Favourites & much more coming soon
+- Made with an aim to incoperate various **Flutter Widgets** & display proficiency in Flutter & Dart internals
 
-A few resources to get you started if this is your first Flutter project:
+## ScreenShots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<img src="Screenshot_1646591809.png" height="300em" /> | <img src="Screenshot_1646591814.png" height="300em" /> |  <img src="Screenshot_1646591818.png" height="300em" /> |
+<img src="Screenshot_1646591832.png" height="300em" /> | <img src="Screenshot_1646591836.png" height="300em" />
+---
+<img src="Screenshot_1646591847.png" height="300em" /> | <img src="Screenshot_1646591856.png" height="300em" /> | <img src="Screenshot_1646591876.png" height="300em" /> |
+<img src="Screenshot_1646591902.png" height="300em" /> | <img src="Screenshot_1646591914.png" height="300em" />
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Created & Maintained by
+
+### **Amartya Yadav**
+---

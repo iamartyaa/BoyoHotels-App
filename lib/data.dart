@@ -135,21 +135,21 @@ List<Category> DUMMY_CATEGORIES = [
   const Category(
     id: 'c1',
     title: 'Reach for the Stars',
-    img: "assets/images/rad-pozniakov-134-72ac7W4-unsplash.jpg",
+    img: "https://images.unsplash.com/photo-1532980210220-1d5b19dec081?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
   ),
   const Category(
     id: 'c2',
     title: 'Seas the day',
-    img: "assets/images/lance-asper-mNDVSSmMt0Y-unsplash.jpg",
+    img: "https://images.unsplash.com/photo-1489721775296-bd64cd2c4ddf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
   ),
   const Category(
     id: 'c3',
     title: 'Wander amid wonders',
-    img: "assets/images/gaurav-sharma-lj3r0SZK7rQ-unsplash.jpg",
+    img: "https://images.unsplash.com/photo-1631867675167-90a456a90863?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80",
   ),
   const Category(
     id: 'c4',
     title: 'Hop around town',
-    img: "assets/images/pedro-lastra-5g8dJvtYRYA-unsplash.jpg",
+    img: "https://images.unsplash.com/photo-1473951574080-01fe45ec8643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=904&q=80",
   ),
 ];

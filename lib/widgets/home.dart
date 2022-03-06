@@ -3,6 +3,7 @@ import 'package:demo/models/category.dart';
 import 'package:demo/models/room.dart';
 import 'package:demo/widgets/categories.dart';
 import 'package:demo/widgets/city.dart';
+import 'package:demo/widgets/collection.dart';
 import 'package:demo/widgets/room_item.dart';
 import 'package:flutter/material.dart';
 
@@ -64,6 +65,9 @@ class Home extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(
+            height: 10,
+          ),
           Container(
             height: 250,
             width: double.infinity,
@@ -82,7 +86,7 @@ class Home extends StatelessWidget {
                 maxCrossAxisExtent: 300,
                 childAspectRatio: 3 / 2,
                 crossAxisSpacing: 10,
-                mainAxisSpacing: 22,
+                mainAxisSpacing: 10,
               ),
             ),
           ),
@@ -90,11 +94,11 @@ class Home extends StatelessWidget {
             height: 20,
           ),
           Container(
-            height: 100,
+            height: 40,
             width: double.infinity,
             padding: const EdgeInsets.fromLTRB(5, 5, 5, 2),
             child: const Text(
-              'Our Collection',
+              'Our Top Collection',
               textAlign: TextAlign.left,
               style: TextStyle(
                 fontFamily: 'RobotoCondensed',
@@ -104,17 +108,26 @@ class Home extends StatelessWidget {
             ),
           ),
           Container(
-            padding: const EdgeInsets.fromLTRB(5, 5, 5, 2),
-            child: const Center(
-              child: Text(
-                'Section Coming Soon',
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                  fontFamily: 'RobotoCondensed',
-                  fontSize: 18,
-                  color: Colors.grey,
-                  fontWeight: FontWeight.bold,
-                ),
+            height: 320,
+            child: GridView(
+              padding: EdgeInsets.all(10),
+              scrollDirection: Axis.horizontal,
+              children: [
+                ...hotelRooms.map((room) {
+                  return Collections(
+                    id: room.id,
+                    cityName: "Jaipur",
+                    hotelName: "Metropolitan",
+                    //addNewBooking: widget.addNewBooking,
+                    //hotelId: widget.hotelId,
+                  );
+                }).toList(),
+              ],
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 300,
+                childAspectRatio: 3 / 2,
+                crossAxisSpacing: 2,
+                mainAxisSpacing: 2,
               ),
             ),
           ),

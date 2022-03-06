@@ -35,9 +35,24 @@ class CategoryItem extends StatelessWidget {
         child: Stack(
           children: [
             Container(
-
-              padding: const EdgeInsets.all(15),
-              child: Image.asset(img,fit: BoxFit.cover,)
+                height: 200,
+                width: 200,
+                child: Image.asset(
+                  img,
+                  fit: BoxFit.fill,
+                )),
+            Container(
+              padding: EdgeInsets.all(5),
+              child: Center(
+                  child: Text(
+                title,
+                style: const TextStyle(
+                    fontFamily: 'Raleway',
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    ),
+              )),
             ),
           ],
         ));

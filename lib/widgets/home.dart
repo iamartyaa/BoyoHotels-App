@@ -65,10 +65,10 @@ class Home extends StatelessWidget {
             ),
           ),
           Container(
-            height: 200,
+            height: 250,
             width: double.infinity,
             child: GridView(
-              padding: const EdgeInsets.all(22),
+              padding: const EdgeInsets.all(10),
               children: [
                 ...DUMMY_CATEGORIES.map((catData) {
                   return CategoryItem(
@@ -79,10 +79,10 @@ class Home extends StatelessWidget {
                 }).toList(),
               ],
               gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 200,
+                maxCrossAxisExtent: 300,
                 childAspectRatio: 3 / 2,
-                crossAxisSpacing: 20,
-                mainAxisSpacing: 20,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 22,
               ),
             ),
           ),
